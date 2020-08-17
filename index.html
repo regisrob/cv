@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Régis Robineau - CV (Curriculum vitae / Resume)</title>
+  <meta name="description" content="Curriculum vitae de Régis Robineau (version web et imprimable)">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Rich Snippets -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Régis Robineau",
+      "givenName": "Régis",
+      "familyName": "Robineau",
+      "url": [
+        "https://twitter.com/regisrob",
+        "https://github.com/regisrob"
+      ],
+      "email": "regisrobineau@gmail.com",
+      "homeLocation": {
+        "@type": "Country",
+        "name": "France"
+      },
+      "image": "https://regisrob.fr/cv/img/photo.png",
+      "jobTitle": "Ingénieur d’études en humanités numériques et gestion de projets Web"
+    }
+  </script>
+  <link rel="icon" href="/favicon.png" sizes="32x32">
+  <style>
+  /*@font-face {
+    font-family: 'Orkney';
+    src: url('fonts/orkney-regular-webfont.woff') format('woff'),
+    font-weight: normal;
+    font-style: normal;
+  }*/
+
+  /*@font-face {
+    font-family: 'Belleza';
+    src: url('fonts/Belleza-Regular.woff') format('woff'),
+    font-weight: normal;
+    font-style: normal;
+  }*/
+
+  :root {
+    --font-heading: small-caps normal 100% Constantia, 'Palatino Linotype', Palatino, Georgia, serif;
+    /*--font-heading: small-caps normal 100% Belleza, 'Palatino Linotype', Palatino, Georgia, serif;*/
+    /*--primary: #32936F;*/
+    /*--primary: hsl(185, 35%, 40%);*/
+    --primary: hsl(161, 23%, 52%);
+    --link: hsl(161, 30%, 38%);
+    --secondary: hsl(293, 8%, 44%);
+  }
+
+  h1,
+  header > h1 > span,
+  header > ul > li:before {
+    color: var(--primary);
+  }
+
+  * { margin:0; }
+
+  html {
+    background: #BABFC9;
+    /*font-size: 14px;*/
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    width: 60em;
+    padding: 7em 8%;
+    box-sizing: border-box;
+    margin: 1em auto;
+    background: white;
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,.3);
+    font: 100%/1.6 'Segoe UI', Optima, 'Hiragino Kaku Gothic Pro', 'Apple Gothic', Tahoma, 'Helvetica Neue', sans-serif;
+    hyphens: auto;
+    transition: .5s font-size;
+  }
+
+  .button {
+    display: inline-block;
+    position: absolute;
+    top: 1.15em;
+    width: 2.25em;
+    height: 2.25em;
+    opacity: .4;  
+  }
+
+  .print {
+    background: url('img/print-24px.svg') 0 0/contain no-repeat;
+    right: 1.15em;
+  }
+
+  /* .email {
+    background: url('img/email-24px.svg') 0 0/contain no-repeat;
+    right: 4em;
+  }*/
+
+  .resume {
+    text-align: justify;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+    margin-bottom: .4em;
+    font: var(--font-heading);
+  }
+
+  h1 {
+    margin-top: 1.2em;
+    font-size: 200%;
+  }
+
+  h2, h3 {
+    color: var(--secondary);
+  }
+
+  h2 {
+    margin-top: 1em;
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  h3 {
+    margin-top: .8em;
+    font-size: 125%;
+  }
+
+  a {
+    color: var(--link);
+    text-underline-offset: .2em;
+    text-decoration-style: dashed;
+  }
+
+  a:hover {
+    text-decoration: none;
+    opacity: 1;
+  }
+
+  abbr[title] {
+    border-bottom: 1px dotted var(--link);
+    text-decoration: none;
+    cursor: help;
+  }
+
+  p {
+    margin: .6em 0;
+  }
+
+  h1 + p,
+  h2 + p {
+    margin-top: 0;
+  }
+
+  ul {
+    padding: 0;
+    list-style: square;
+    list-style-position: inside;
+  }
+
+    ul ul {
+      padding-left: 3em;
+    }
+
+  header {
+    text-align: center;
+  }
+
+    header > h1 {
+      color: #7F7F7F;
+      color: var(--secondary);
+      border-bottom: 1px solid var(--primary);
+      margin: 0 0 .15em;
+      text-indent: 1.2em;
+      font-size: 450%;
+      line-height: 1.25em;
+      font-variant: normal;
+    }
+
+      header > h1 > span {
+        display: inline-block;
+        margin-left: -2.7em;
+        vertical-align: super;
+        font-size: 50%;
+      }
+
+    header > ul {
+      display: block;
+      margin-bottom: .5em;
+    }
+
+      header > ul > li {
+        display: inline;
+        list-style: none;
+      }
+
+      header > ul > li:before {
+        content: '● ';
+      }
+
+      header > ul > li:first-child:before {
+        content: none;
+      }
+
+    header > .photo {
+      width: 12em;
+      filter: grayscale(100%);
+      clip-path: circle(50% at 50% 50%);
+    }
+
+    address {
+      font-style: normal;
+    }
+
+  section {
+    break-inside: avoid;
+  }
+
+    section > h1 {
+      box-shadow: calc(-8vw + .6em) 0 white, calc(-8vw - .1em) 0 0 -.1em;
+    }
+
+  li {
+    break-inside: avoid;
+  }
+
+  ol.timeline {
+    padding: 0;
+    border: 0 solid #ddd;
+    border-width: 4px 0;
+  }
+
+    ol.timeline > li {
+      list-style: none;
+      padding: .4em 0;
+      border: 1px solid white; /* Chrome printing bug */
+      border-top-color: #ccc;
+    }
+
+    ol.timeline > li:first-child {
+      border-top: 0;
+    }
+
+      ol.timeline > li > p {
+        margin: 0;
+      }
+
+      ol.timeline > li > .date {
+        float: left;
+        margin-left: .1em;
+        max-width: 7rem;
+        color: var(--secondary);
+        font: var(--font-heading);
+        font-size: 110%;
+      }
+
+      ol.timeline > li > .date ~ p {
+        margin-left: 8rem;
+      }
+
+  .note {
+    margin-top: .4em;
+    font-size: smaller;
+  }
+
+    .note a:not(:hover):not(:active) {
+      color: inherit;
+    }
+
+    .note + .note {
+      margin-top: .3em;
+    }
+
+  footer {
+    margin-top: 3em;
+    font-style: italic;
+  }
+
+  .amp {
+    font-style: italic;
+  }
+
+  #projects .timeline li p:nth-of-type(2) a:first-of-type {
+    font-weight: bold;
+  }
+
+  @media (max-width:950px) {
+    html { /*font-size: 12px;*/ font-size: 15px; }
+    body {
+      width: auto;
+      margin: 1em;
+    }
+    .button {
+      display: none;
+    }
+  }
+
+  @media (max-width:700px) {
+    html { /*font-size: 11px;*/ font-size: 14px; }
+    header > h1 {
+      text-align: center;
+      text-indent: initial;
+    }
+
+    header > h1 > span {
+      margin: 0;
+    }
+  }
+
+  /*@media print or (max-width:500px) {*/
+  @media (max-width:600px) {
+    ol.timeline > li > .date {
+      float: none;
+      text-align: center;
+      max-width: none;
+      margin: .4em 0 .4em 0;
+    }
+    ol.timeline > li > .date ~ p {
+      margin-left: 0;
+    }
+  }
+
+  @media print {
+    @page {
+      size: A4;
+      margin: 2cm;
+    }
+
+    html {
+      background: none;
+    }
+
+    body {
+      box-shadow: none;
+      padding: 0;
+      /*font: 12pt/1.5 Georgia, "Times New Roman", Times, serif;*/
+      font: 11pt/1.5 "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    }
+
+    /*a:link[href^="http"]:after {
+      content: " (" attr(href) ")";
+    }*/
+
+    a {
+      text-decoration: none;
+    }
+
+    /*li + li {
+      margin-top: 0;
+    }*/
+
+    header > h1 {
+      font-size: 20pt;
+    }
+
+    header > img {
+      display: block;
+      position: fixed;
+      right: 0;
+      top: 0;
+    }
+
+    section > h1 {
+      box-shadow: calc(-8vw + 2em) 0 white, calc(-8vw - .1em) 0 0 -.1em;
+      font-size: 18pt;
+    }
+
+    h2 {
+      font-size: 14pt;
+      font-weight: normal;
+    }
+
+    h3 {
+      font-size: 12pt;
+    }
+
+    footer {
+      display: none;
+    }
+
+    .button,
+    .photo,
+    .social {
+      display: none;
+    }
+  }
+  </style>
+</head>
+<body>
+
+<a class="button print" onclick="window.print();" href="#" title="Imprimer"></a>
+
+<header>
+  <img class="photo" src="img/photo.png" alt="Régis Robineau">
+  <h1>Régis Robineau <span>CV</span></h1>
+  <ul class="social">
+    <li><a href="https://twitter.com/regisrob">Twitter</a></li>
+    <li><a href="https://github.com/regisrob">Github</a></li>
+    <li><a href="mailto:regisrobineau@gmail.com">Email</a>
+  </ul>
+</header>
+
+<!-- <nav class="toc">
+  <ol>
+    <li><a href="#experience-pro">Introduction</a></li>
+    <li><a href="#publications">Request &amp; Response</a></li>
+    <li><a href="#speaking">Authentication</a></li>
+    <li class=""><a href="#filters">Filters</a></li>
+  </ol>
+</nav> -->
+
+<section id="resume">
+  <h1>Résumé</h1>
+  <p class="resume">Je suis ingénieur d’études en humanités numériques et gestion de projets Web. Issu d’une double formation en Histoire et en ingénierie documentaire et édition multimédia, mon profil se situe à la frontière du numérique et des Humanités. Mon parcours professionnel se place dans l’optique de mettre les technologies numériques au service de projets culturels ou scientifiques.</p>
+</section>
+
+<section id="experience-pro">
+  <h1>Expérience professionnelle</h1>
+
+  <ol class="timeline">
+    <li>
+      <p class="date">2013&ndash;&hellip;</p>
+      <p><strong>Coordinateur technique</strong> &ndash; <a href="https://www.campus-condorcet.fr/pour-la-recherche/soutien-a-la-recherche/humanites-numeriques/biblissima">Equipex Biblissima</a> (Campus Condorcet), Paris</p>
+      <p class="note">Développement et maintenance de l’infrastructure technique et des applications web de Biblissima • Conduite de projet et de l’équipe d'ingénieurs • Expertise en interopérabilité des images (<abbr title="International Image Interoperability Framework™">IIIF</abbr>), accompagnement et conseil pour IIIF360 (voir <a href="#iiif">Expertise IIIF)</a> • Formation et communication.</p>
+    </li>
+    <li>
+      <p class="date">2011&ndash;2012</p>
+      <p><strong>Ingénieur d’études en édition électronique et gestion de projets numériques</strong> &ndash; CNRS (<a href="https://www.huma-num.fr">TGIR Huma-Num</a> ex-TGE Adonis, puis <a href="https://www.irht.cnrs.fr">IRHT</a>), Orléans</p>
+      <p class="note">Accompagnement de projets numériques en SHS dans le cadre du pôle &laquo; Digital humanities &raquo; • Conception et réalisation de sites web scientifiques.</p>
+    </li>
+    <li>
+      <p class="date">2010&ndash;2011</p>
+      <p><strong>Webmaster</strong> &ndash; <a href="http://www.cndp.fr/crdp-orleans-tours">CANOPÉ Académie d’Orléans-Tours</a>, Orléans</p>
+      <p class="note">Administration des sites web du réseau régional • Animation du comité de pilotage des sites web • Coordination, assistance et formation des référents départementaux et des rédacteurs.</p>
+    </li>
+    <li>
+      <p class="date">2008&ndash;2010</p>
+      <p><strong>Développeur web front-end</strong> &ndash; <a href="http://www.sitti.fr">SITTI</a>, Saran</p>
+      <p class="note">Intégration de contenus multimédias (sites statiques, modules dynamiques, CMS), montage HTML/CSS de maquettes graphiques • Veille technologique.</p>
+    </li>
+  </ol>
+</section>
+
+<section id="formation">
+  <h1>Formation</h1>
+  <ol class="timeline">
+    <li>
+      <p class="date">2005­&ndash;2007</p>
+      <p><strong>Master professionnel Sciences de l’Information et du Document</strong> &ndash; Université de Lille</p>
+      <p class="note">Spécialité &laquo; Ingénierie du Document, Édition et Médiation Multimédia&raquo; (IDEMM). Mention Bien.</p>
+    </li>
+    <li>
+      <p class="date">2000&ndash;2005</p>
+      <p><strong>Master d’Histoire</strong> &ndash; Université d’Orléans</p>
+      <p class="note">Spécialité Histoire ancienne. Mention Très Bien.</p>
+    </li>
+  </ol>
+</section>
+
+<section id="publications">
+  <h1>Publications</h1>
+
+  <h2>Mémoires universitaires</h2>
+  <h3>Histoire</h3>
+  <ul>
+    <li>
+      <strong>Mémoire de Maîtrise</strong>, Université d’Orléans, 2004 (Mention Très Bien) : <em><a href="https://doi.org/10.5281/zenodo.3732528">Les relations entre Scythes et Grecs (VIIe-IVe siècles av. J.-C.)</a></em> (183 p.)
+    </li>
+    <li>
+      <strong>Mémoire de Master 2 Recherche</strong>, Université d’Orléans, 2005 : <em><a href="https://doi.org/10.5281/zenodo.3748918">Approche préliminaire de l’économie du royaume du Bosphore sous les Spartokides : le commerce extérieur</a></em> (64 p.)
+    </li>
+  </ul>
+
+  <h3>Sciences de l’Information et du Document</h3>
+  <ul>
+    <li><strong>Mémoire de stage Master 1</strong>, Université de Lille, 2006 (Mention Bien) : <em><a href="https://dumas.ccsd.cnrs.fr/dumas-01618775">Internet et Antiquité : contribution au développement du site web de la Bibliothèque des Sciences de l’Antiquité (BSA)</a></em> (94 p.)</li>
+    <li><strong>Mémoire de stage Master 2</strong>, Université de Lille, 2007 : <em>Contribution au projet de refonte du site web de l’École française d’Athènes (EFA) : présentation et valorisation des sites de fouilles archéologiques de l’EFA</em></li>
+  </ul>
+
+  <h2>Bibliographies</h2>
+  <ul>
+    <li><em><a href="https://bsa.univ-lille3.fr/scythie.htm">Scythie. Une bibliographie introductive</a></em> (2011)</li>
+    <li><em><a href="https://bsa.univ-lille3.fr/biblioeconomie.html">Économies et sociétés de 478 à 88 en Grèce ancienne. Bibliographie Capes-Agrégation 2007-2009</a></em> (2009)</li>
+  </ul>
+
+  <h2>Billets de blog</h2>
+  <p>Rédaction d’articles sur <em>Insula, le blog de la Bibliothèque des Sciences de l’Antiquité (Université de Lille)</em> &ndash; ISSN 2427-8297 [<a href="https://insula.univ-lille3.fr/author/regisrob/">liste des articles publiés</a>].</p>
+
+  <h2>Livret</h2>
+  <p>Réalisation avec l’équipe Biblissima d’un <a href="https://projet.biblissima.fr/fr/evenements/journee-biblissima-iiif-innover-redecouvrir-patrimoine-ecrit-2018#livre-biblissima-2018">livret</a> offrant une vue d’ensemble du programme Biblissima (pdf, 198 pages).</p>
+</section>
+
+<section id="enseignement">
+  <h1>Enseignement</h1>
+  <ul>
+    <li><em><a href="https://www.youtube.com/watch?v=rIFLtFjKNIo&t=1s">Biblissima: Connecting Manuscripts Collections</a></em> (Partie I), <em><a href="https://www.youtube.com/watch?v=4jnG_XIEr0I&t">Introduction to IIIF</a></em> (Partie II). Wébinaire donné dans le cadre du cycle de séminaire &laquo; La tecnologia informatica applicata alle scienze filologiche e librarie &raquo; (Scuola di alta formazione in Storia e Filologia del manoscritto e del libro antico, Università degli Studi di Napoli Federico II), 20 mai 2020.</li>
+    <li><em><a href="https://doi.org/10.5281/zenodo.3760306">Introduction aux protocoles IIIF</a></em>. Cours donné dans le cadre du Diplôme de conservateur de bibliothèque (DCB 27), UE &laquo; Le numérique en bibliothèque &raquo;, Enssib, Villeurbanne, 23 janvier 2019.</li>
+  </ul>
+</section>
+
+<section id="presentations">
+  <h1>Présentations</h1>
+  
+  <h2>Conférences internationales</h2>
+  <ul>
+    <li><em><a href="https://doi.org/10.5281/zenodo.3760301">Digital Manuscripts Without Borders: A Discovery Platform of Manuscripts and Rare Books</a></em>, 2019 International Image Interoperability Framework (IIIF) Conference, Georg-August-Universität, Göttingen, 26 juin 2019 [<a href="https://www.youtube.com/watch?v=ok8K7l6-Rd8">Vidéo</a>].</li>
+    <li><em><a href="https://doi.org/10.5281/zenodo.3766951">Discovery and Use of Images in the Biblissima Portal: Providing Access to Medieval and Renaissance Books via IIIF</a></em>, 2017 International Image Interoperability Framework (IIIF) Conference, Institutum Patristicum Augustinianum, Vatican, 7 juin 2017.</li>
+    <li><em><a href="https://doi.org/10.5281/zenodo.3766961">The Use of IIIF in the Biblissima Web Portal</a></em>, 2016 International Image Interoperability Framework (IIIF) Conference, Museum of Modern Art (MOMA), New York, 10 mai 2016 [<a href="https://www.youtube.com/watch?list=PLYPP1-8uH9c5smSD2wyVgsqKxD218khZq&v=xYmbGmJjrEA">Vidéo</a>].</li>
+  </ul>
+
+  <h2>Journées d’études et séminaires</h2>
+  <p>Dans le cadre de mes fonctions à Biblissima (2013&ndash;&hellip;), j’interviens régulièrement lors de séminaires et journées d’études en France et à l’étranger. Les supports de présentations sont disponibles <a href="https://projet.biblissima.fr/fr/ressources/presentations">sur le site de Biblissima</a>.</p>
+</section>
+
+<section id="iiif">
+  <h1>Expertise IIIF</h1>
+
+  <p>Depuis 2013, je suis investi dans l’initiative internationale <a href="https://iiif.io">IIIF</a> (<em>International Image Interoperability Framework™</em>). IIIF est un ensemble de standards qui définissent un cadre d’interopérabilité pour la diffusion des images numériques sur le Web.</p>
+  <ul>
+    <li>je suis membre du <em><a href="https://iiif.io/community/trc/">IIIF Technical Review Committee</a></em> (TRC) du consortium IIIF depuis 2018</li>
+    <li>je participe aux <a href="https://iiif.io/event/">conférences et réunions des groupes de travail</a> de la communauté IIIF en Europe et en Amérique du Nord</li>
+    <li>je contribue au <em><a href="https://github.com/IIIF/cookbook-recipes/">Cookbook of IIIF recipes</a></em> et aux activités de divers groupes de travail (<em>Outreach</em>, <em>Manuscripts</em>)</li>
+  </ul>
+
+  <p>En mars 2018, j’ai organisé avec l’équipe Biblissima la <strong>première rencontre IIIF francophone</strong> (<em><a href="https://projet.biblissima.fr/fr/evenements/journee-biblissima-iiif-innover-redecouvrir-patrimoine-ecrit-2018">Journée Biblissima et IIIF&nbsp;: Innover pour redécouvrir le patrimoine écrit</a></em>, Campus Condorcet, 15 mars 2018), suivie par plus de 150 personnes venues du monde de l’enseignement supérieur et de la recherche, des institutions patrimoniales et des collectivités locales.</p>
+
+  <p>Depuis novembre 2018, je suis impliqué dans l’initiative <a href="https://www.campus-condorcet.fr/pour-la-recherche/soutien-a-la-recherche/humanites-numeriques/iiif360-une-offre-d-expertise-autour-de-iiif">IIIF360</a>, une <strong>offre d’expertise autour des technologies IIIF</strong> portée conjointement par Biblissima, le Campus Condorcet et la TGIR Huma-Num.</p>
+</section>
+
+<section id="projets-web">
+  <h1>Projets Web</h1>
+
+  <ol class="timeline">
+    <li>
+      <p class="date">2013&ndash;&hellip;</p>
+      <p><em><a href="https://biblissima.fr">Biblissima</a>. Observatoire du patrimoine écrit du Moyen Âge et de la Renaissance</em></p>
+      <p class="note">Conception, développement et maintenance d’une infrastructure numérique de recherche au sein d’un pool d’ingénieurs, en matière technique, fonctionnelle et d’enrichissement des données • Administration des serveurs et des applications (Debian).</p>
+      <p class="note">Réalisations : <strong><a href="https://portail.biblissima.fr">Portail Biblissima</a></strong>, <strong><a href="https://iiif.biblissima.fr/collections/">Moteur IIIF-Collections</a></strong>, <strong><a href="https://data.biblissima.fr">Référentiels Biblissima</a></strong>, <strong><a href="https://outils.biblissima.fr">Boîte à outils</a></strong>, et autres sites du projet (<a href="https://projet.biblissima.fr">Projet</a>, <a href="https://demos.biblissima.fr">Démos</a>, <a href="https://doc.biblissima.fr">Doc</a>). Plusieurs d'entre elles sont disponibles sur <a href="https://github.com/biblissima">Github</a>.</p>
+      <p class="note">Contributions au développement du <strong><a href="https://projectmirador.org">visualiseur Mirador</a></strong> [<a href="https://github.com/ProjectMirador/mirador">Github</a>] • Participation à la communauté Mirador depuis 2013 à travers divers workshops et visioconférences • Implémentations du logiciel dans le cadre de Biblissima.</p>
+    </li>
+    <li>
+      <p class="date">2012</p>
+      <p><em><a href="http://www.cn-telma.fr">Telma</a>. Traitement électronique des manuscrits et des archives</em></p>
+      <p class="note">Refonte du portail : développement et intégration graphique (sous Drupal).</p>
+    </li>
+    <li>
+      <p class="date">2012</p>
+      <p><em><a href="https://www.manuscrits-de-chartres.fr">A la recherche des manuscrits de Chartres</a></em></p>
+      <p class="note">Conception et réalisation technique du site web (refonte complète, sous Drupal).</p>
+    </li>
+    <li>
+      <p class="date">2010</p>
+      <p><em><a href="https://insula.univ-lille3.fr">Insula</a>. Le blog de la Bibliothèque des Sciences de l’Antiquité (Université de Lille)</em></p>
+      <p class="note">Conception et administration du blog (sous WordPress) • Rédaction d’articles • Mise en place d’une newsletter • Conception d’un <a href="https://insula.univ-lille3.fr/2012/02/insula-ebook/">ebook (ePUB)</a> à partir des contenus du blog.</p>
+    </li>
+    <li>
+      <p class="date">2007</p>
+      <p><em><a href="https://www.efa.gr/fr/recherche/sites-de-fouilles">Site de l’École française d’Athènes</a>. Les sites de fouilles archéologiques</em></p>
+      <p class="note">Recherche, collecte et mise en forme des contenus textuels et iconographiques • Définition de l’architecture du site • Montage et intégration des pages web.</p>
+    </li>
+    <li>
+      <p class="date">2007</p>
+      <p><em><a href="http://mindcator.free.fr">Mindcator</a>. Un point d'entrée dans l’univers de la cartographie d’informations</em></p>
+      <p class="note">Pilotage éditorial du projet (groupe­-projet de Master 2) • Refonte technique et éditoriale complète du site web (2009).</p>
+    </li>
+    <li>
+      <p class="date">2006</p>
+      <p><em><a href="https://bsa.univ-lille3.fr">Site de la Bibliothèque des Sciences de l’Antiquité</a></em></p>
+      <p class="note">Refonte graphique et fonctionnelle • Mise en place d'un module d'administration • conception et réalisation du projet web <a href="https://bsa.univ-lille3.fr/abac/abacaccueil.html">ABAC</a> (stage).</p>
+    </li>
+  </ol>
+</section>
+
+<section id="competences">
+  <h1>Compétences</h1>
+  <h2>Conception Web, développement et interopérabilité</h2>
+  <ul>
+    <li>Connaissance des bonnes pratiques et principes de la qualité Web : ergonomie, accessibilité, référencement naturel, performance</li>
+    <li>Maîtrise des techniques et langages de création de sites web (CSS, HTML, Javascript)</li>
+    <li>Langages de programmation (PHP, Python)</li>
+    <li>Langages de requêtes (SQL, SPARQL, XPath/XQuery)</li>
+    <li>Systèmes de gestion de base de données (MySQL, PostgreSQL, MongoDB)</li>
+    <li>Systèmes de gestion de versions (Git, Mercurial)</li>
+    <li>Connaissance des standards et technologies du Web sémantique (RDF, SPARQL)</li>
+    <li>Connaissance des normes, schémas et protocoles d'échange et de structuration de données (APIs IIIF, OAI-PMH, EAD, TEI&hellip;)</li>
+    <li>Outils de publication et gestion de contenus : CMS (Drupal, Wordpress), générateur de sites statiques (Jekyll), bases de connaissances (Mediawiki/Wikibase, Dokuwiki)</li>
+    <li>Logiciels de graphisme et édition multi-supports : Photoshop, InDesign</li>
+  </ul>
+  <h2>Gestion de projet</h2>
+  <ul>
+    <li>Passer des marchés publics, gérer la relation avec un prestataire</li>
+    <li>Élaborer un cahier des charges, définir des spécifications fonctionnelles</li>
+    <li>Encadrer et animer une équipe</li>
+  </ul>
+  <h2>Administration système</h2>
+  <ul>
+    <li>Installer, configurer, maintenir des serveurs sous GNU/Linux (Debian)</li>
+  </ul>
+</section>
+
+<section id="langues">
+  <h1>Langues</h1>
+  <ul>
+    <li><strong>Français</strong> (langue maternelle)</li>
+    <li><strong>Anglais</strong> courant</li>
+    <li><strong>Espagnol</strong> courant</li>
+    <li>Grec ancien (débutant)</li>
+  </ul>
+</section>
+
+<section id="interets-pro">
+  <h1>Intérêts professionnels</h1>
+  <p>Humanités numériques, information scientifique et technique, interopérabilité et ouverture des données scientifiques et culturelles, conception et développement web.
+  </p>
+</section>
+
+<section id="interets-perso">
+  <h1>Intérêts personnels</h1>
+  <p><a href="https://www.babelio.com/monprofil.php?id_user=63614">Lecture</a>, voyage, sport, danse.</p>
+</section>
+
+<footer>
+</footer>
+
+<script>
+(function(){
+  if(!document.querySelectorAll) return;
+  var external = document.querySelectorAll('a[href^="http://"], a[href^="https://"]'), a;
+  for(var i=external.length; a=external[--i];) {
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener');
+  }
+})();
+</script>
+</body>
+</html>
